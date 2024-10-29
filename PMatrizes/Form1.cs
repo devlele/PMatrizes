@@ -79,7 +79,7 @@ namespace PMatrizes
                 for(int j = 0; j < 3; j++)// Para acessar as notas
                 {
                     auxiliar = "";
-                    auxiliar = Interaction.InputBox($"Dígite o {i+1}º número", "Entrada das notas");
+                    auxiliar = Interaction.InputBox($"Dígite as notas do {i+1}º aluno", "Entrada das notas");
 
                     if (!Double.TryParse(auxiliar, out notas[i, j]))
                     {
@@ -93,17 +93,23 @@ namespace PMatrizes
                 }
             }
 
-            for(int i = 0; i < 20;i++)
+            for(int i = 0; i < 20;i++)//Percorre os alunos e calcula a media
             {
                 medias[i] = (notas[i, 0] + notas[i, 1] + notas[i, 2]) / 3;
             }
 
-            for(int i = 0; i < 20; i++)
+            for(int i = 0; i < 20; i++)//Atribui cada media no vetor ao resultado usando cocaternação
             {
                 resultado += "Aluno: " + (i + 1) + " Média: " + medias[i] + "\n";
             }
 
             MessageBox.Show(resultado);
+        }
+
+        private void btnExercicio4_Click(object sender, EventArgs e)
+        {
+            frmExercicio4 obj = new frmExercicio4();
+            obj.Show();
         }
     }
 }
