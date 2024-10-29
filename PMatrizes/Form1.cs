@@ -71,14 +71,15 @@ namespace PMatrizes
 
         private void btnExercicio3_Click(object sender, EventArgs e)
         {
-            double[,] medias = new double[20, 2];
+            double[] medias = new double[20];
             double[,] notas = new double[20, 3]; //Sintaxe para criação de matriz
+            string resultado = "";
             for(int i = 0; i < 20; i++)// Para acessar os alunos
             {
                 for(int j = 0; j < 3; j++)// Para acessar as notas
                 {
                     auxiliar = "";
-                    auxiliar = Interaction.InputBox("Dígite a nota do Aluno", "Entrada das notas");
+                    auxiliar = Interaction.InputBox($"Dígite o {i+1}º número", "Entrada das notas");
 
                     if (!Double.TryParse(auxiliar, out notas[i, j]))
                     {
@@ -89,10 +90,20 @@ namespace PMatrizes
                         MessageBox.Show("As notas precisam estar entre 0 e 10");
                         j--;
                     }
-
-
                 }
             }
+
+            for(int i = 0; i < 20;i++)
+            {
+                medias[i] = (notas[i, 0] + notas[i, 1] + notas[i, 2]) / 3;
+            }
+
+            for(int i = 0; i < 20; i++)
+            {
+                resultado += "Aluno: " + (i + 1) + " Média: " + medias[i] + "\n";
+            }
+
+            MessageBox.Show(resultado);
         }
     }
 }
