@@ -71,7 +71,7 @@ namespace PMatrizes
 
         private void btnExercicio3_Click(object sender, EventArgs e)
         {
-             media;
+            double[,] medias = new double[20, 2];
             double[,] notas = new double[20, 3]; //Sintaxe para criação de matriz
             for(int i = 0; i < 20; i++)// Para acessar os alunos
             {
