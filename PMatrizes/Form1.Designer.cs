@@ -37,9 +37,10 @@
             // 
             // btnExercicio1
             // 
-            this.btnExercicio1.Location = new System.Drawing.Point(134, 33);
+            this.btnExercicio1.Location = new System.Drawing.Point(179, 41);
+            this.btnExercicio1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnExercicio1.Name = "btnExercicio1";
-            this.btnExercicio1.Size = new System.Drawing.Size(196, 99);
+            this.btnExercicio1.Size = new System.Drawing.Size(261, 122);
             this.btnExercicio1.TabIndex = 0;
             this.btnExercicio1.Text = "Exercício 1";
             this.btnExercicio1.UseVisualStyleBackColor = true;
@@ -47,9 +48,10 @@
             // 
             // btnExercicio2
             // 
-            this.btnExercicio2.Location = new System.Drawing.Point(497, 33);
+            this.btnExercicio2.Location = new System.Drawing.Point(663, 41);
+            this.btnExercicio2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnExercicio2.Name = "btnExercicio2";
-            this.btnExercicio2.Size = new System.Drawing.Size(196, 99);
+            this.btnExercicio2.Size = new System.Drawing.Size(261, 122);
             this.btnExercicio2.TabIndex = 1;
             this.btnExercicio2.Text = "Exercício 2";
             this.btnExercicio2.UseVisualStyleBackColor = true;
@@ -57,9 +59,10 @@
             // 
             // btnExercicio3
             // 
-            this.btnExercicio3.Location = new System.Drawing.Point(134, 198);
+            this.btnExercicio3.Location = new System.Drawing.Point(179, 244);
+            this.btnExercicio3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnExercicio3.Name = "btnExercicio3";
-            this.btnExercicio3.Size = new System.Drawing.Size(196, 99);
+            this.btnExercicio3.Size = new System.Drawing.Size(261, 122);
             this.btnExercicio3.TabIndex = 2;
             this.btnExercicio3.Text = "Exercício 3";
             this.btnExercicio3.UseVisualStyleBackColor = true;
@@ -67,9 +70,10 @@
             // 
             // btnExercicio4
             // 
-            this.btnExercicio4.Location = new System.Drawing.Point(497, 198);
+            this.btnExercicio4.Location = new System.Drawing.Point(663, 244);
+            this.btnExercicio4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnExercicio4.Name = "btnExercicio4";
-            this.btnExercicio4.Size = new System.Drawing.Size(196, 99);
+            this.btnExercicio4.Size = new System.Drawing.Size(261, 122);
             this.btnExercicio4.TabIndex = 3;
             this.btnExercicio4.Text = "Exercício 4";
             this.btnExercicio4.UseVisualStyleBackColor = true;
@@ -77,23 +81,26 @@
             // 
             // btnExercicio5
             // 
-            this.btnExercicio5.Location = new System.Drawing.Point(316, 339);
+            this.btnExercicio5.Location = new System.Drawing.Point(421, 417);
+            this.btnExercicio5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnExercicio5.Name = "btnExercicio5";
-            this.btnExercicio5.Size = new System.Drawing.Size(196, 99);
+            this.btnExercicio5.Size = new System.Drawing.Size(261, 122);
             this.btnExercicio5.TabIndex = 4;
             this.btnExercicio5.Text = "Exercício 5";
             this.btnExercicio5.UseVisualStyleBackColor = true;
+            this.btnExercicio5.Click += new System.EventHandler(this.btnExercicio5_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.btnExercicio5);
             this.Controls.Add(this.btnExercicio4);
             this.Controls.Add(this.btnExercicio3);
             this.Controls.Add(this.btnExercicio2);
             this.Controls.Add(this.btnExercicio1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);

@@ -84,6 +84,7 @@ namespace PMatrizes
                     if (!Double.TryParse(auxiliar, out notas[i, j]))
                     {
                         MessageBox.Show("Valor inválido");
+                        j--;
                     }
                     if (notas[i,j] < 0 || notas[i,j] > 10)
                     {
@@ -110,6 +111,12 @@ namespace PMatrizes
         {
             frmExercicio4 obj = new frmExercicio4();
             obj.Show();
+        }
+
+        private void btnExercicio5_Click(object sender, EventArgs e)
+        {
+            frmEercicio5 obj2 = new frmEercicio5();
+            obj2.Show();
         }
     }
 }
